@@ -1,3 +1,6 @@
+Please Note:
+This package is currently very, very alpha while I work a few kinks out.
+
 Laravel OAuth
 =============
 
