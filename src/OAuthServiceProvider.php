@@ -29,7 +29,7 @@ class OAuthServiceProvider extends ServiceProvider {
             $factory = new ServiceFactory;
 
             $session = $app->make('session')->driver();
-            $storage = new \OAuth\Common\Storage\Eloquent($session);
+            $storage = new \SSX\OAuth\Storage\Eloquent($session);
 
             return new OAuth($factory, $storage);
         });
