@@ -1,9 +1,13 @@
 {
-    "name": "jenssegers/oauth",
+    "name": "ssx/oauth",
     "description": "Laravel OAuth library based on Lusitanian/PHPoAuthLib",
     "keywords": ["oauth", "laravel"],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Scott Wilcox",
+            "homepage": "http://dor.ky"
+        },
         {
             "name": "Jens Segers",
             "homepage": "http://jenssegers.be"
@@ -24,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jenssegers\\OAuth\\": "src/"
+            "SSX\\OAuth\\": "src/"
         }
     }
 }
