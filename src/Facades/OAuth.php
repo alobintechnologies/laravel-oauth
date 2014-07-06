@@ -1,4 +1,4 @@
-<?php namespace Jenssegers\OAuth\Facades;
+<?php namespace SSX\OAuth\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,4 +1,4 @@
-<?php namespace Jenssegers\OAuth;
+<?php namespace SSX\OAuth;
 
 use \Illuminate\Support\ServiceProvider;
 use \OAuth\ServiceFactory;
@@ -14,7 +14,7 @@ class OAuthServiceProvider extends ServiceProvider {
     public function boot()
     {
         // Fix for PSR-4
-        $this->package('jenssegers/oauth', 'oauth', realpath(__DIR__));
+        $this->package('ssx/oauth', 'oauth', realpath(__DIR__));
     }
 
     /**

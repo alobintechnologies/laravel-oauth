@@ -1,6 +1,6 @@
 <?php
 
-use Jenssegers\OAuth\OAuth;
+use SSX\OAuth\OAuth;
 use OAuth\Common\Storage\Memory;
 
 class OAuthProviderTest extends Orchestra\Testbench\TestCase {
@@ -12,13 +12,13 @@ class OAuthProviderTest extends Orchestra\Testbench\TestCase {
 
     protected function getPackageProviders()
     {
-        return array('Jenssegers\OAuth\OAuthServiceProvider');
+        return array('SSX\OAuth\OAuthServiceProvider');
     }
 
     protected function getPackageAliases()
     {
         return array(
-            'OAuth' => 'Jenssegers\OAuth\Facades\OAuth'
+            'OAuth' => 'SSX\OAuth\Facades\OAuth'
         );
     }
 

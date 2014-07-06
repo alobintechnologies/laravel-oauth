@@ -1,4 +1,4 @@
-<?php namespace Jenssegers\OAuth;
+<?php namespace SSX\OAuth;
 
 use \App;
 use \Config;
