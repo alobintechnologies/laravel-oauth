@@ -52,17 +52,17 @@ Add the package to your `composer.json` and run `composer update`.
 
     {
         "require": {
-            "jenssegers/oauth": "*"
+            "ssx/oauth": "*"
         }
     }
 
 Add the service provider in `app/config/app.php`:
 
-    'Jenssegers\OAuth\OAuthServiceProvider',
+    'SSX\OAuth\OAuthServiceProvider',
 
 Add the OAuth alias to `app/config/app.php`:
 
-    'OAuth'            => 'Jenssegers\OAuth\Facades\OAuth',
+    'OAuth'            => 'SSX\OAuth\Facades\OAuth',
 
 Configuration
 -------------
