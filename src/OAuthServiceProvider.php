@@ -2,7 +2,7 @@
 
 use \Illuminate\Support\ServiceProvider;
 use \OAuth\ServiceFactory;
-use \OAuth\Common\Storage\SymfonySession;
+use \OAuth\Common\Storage\Eloquent;
 
 class OAuthServiceProvider extends ServiceProvider {
 
@@ -29,7 +29,7 @@ class OAuthServiceProvider extends ServiceProvider {
             $factory = new ServiceFactory;
 
             $session = $app->make('session')->driver();
-            $storage = new SymfonySession($session);
+            $storage = new \OAuth\Common\Storage\Eloquent($session);
 
             return new OAuth($factory, $storage);
         });
