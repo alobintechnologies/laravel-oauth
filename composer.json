@@ -5,17 +5,16 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Scott Wilcox",
+            "homepage": "http://dor.ky"
+        },
+        {
             "name": "Jens Segers",
             "homepage": "http://jenssegers.be"
         },
         {
             "name": "Hannes Van De Vreken",
             "homepage": "http://hannesv.be"
-        },
-        {
-            "name": "Scott Wilcox",
-            "email": "scott@dor.ky",
-            "homepage": "http://dor.ky"
         }
     ],
     "require": {
