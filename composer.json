@@ -1,16 +1,26 @@
 {
     "name": "ssx/oauth",
-    "description": "",
+    "description": "Laravel OAuth library based on Lusitanian/PHPoAuthLib",
+    "keywords": ["oauth", "laravel"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Scott Wilcox",
             "email": "scott@dor.ky"
+        },
+        {
+            "name": "Jens Segers",
+            "homepage": "http://jenssegers.be"
+        },
+        {
+            "name": "Hannes Van De Vreken",
+            "homepage": "http://hannesv.be"
         }
     ],
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "4.2.*",
-        "lusitanian/oauth": "*"
+        "lusitanian/oauth": "0.1.*@dev"
     },
     "autoload": {
         "classmap": [
