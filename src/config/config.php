@@ -32,5 +32,4 @@ return array(
     'consumers' => array(
 
     )
-
 );
