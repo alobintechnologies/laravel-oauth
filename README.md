@@ -156,29 +156,6 @@ To override the default redirect url, or scope use:
 
     $oauth = OAuth::consumer('facebook', URL::to('url'), array('email', 'publish_actions'));
 
-Once you have the service object, you can use it to interact with the service's API. For more information check out [PHPoAuthLib](https://github.com/Lusitanian/PHPoAuthLib).
+Once you have the service object, you can use it to interact with the service's API. 
 
-Example
--------
-
-Example usage for the Facebook API.
-
-    $facebook = OAuth::consumer('facebook');
-
-    // Response from Facebook
-    if ($code = Input::get('code'))
-    {
-        $token = $facebook->requestAccessToken($code);
-
-        $result = json_decode($facebook->request('/me'), true);
-
-        echo 'Your unique facebook user id is: ' . $result['id'] . ' and your name is ' . $result['name'];
-    }
-
-    // Redirect to login
-    else
-    {
-        return Redirect::away((string) $oauth->getAuthorizationUri());
-    }
-
-For more examples check out [PHPoAuthLib](https://github.com/Lusitanian/PHPoAuthLib/tree/master/examples).
+For more information check out [PHPoAuthLib](https://github.com/Lusitanian/PHPoAuthLib).
